@@ -1,0 +1,35 @@
+.work{
+	background-color: $base-color-white;
+	height: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: opacity .25s ease-in-out;
+	-o-transition: opacity .25s ease-in-out;
+	-ms-transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+	h2{
+		font-size: 36px;
+		margin-bottom: 30px;
+	}
+	p{
+		font-size: 20px;
+		margin-bottom: 40px;
+		color: $base-color-light-text;
+	}
+
+	&__images{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		div {
+			width: 260px;
+			height: 195px;
+			overflow: hidden;
+			margin-bottom: 10px;
+			img{
+				max-width: 100%;
+			}
+		}
+	}
+}

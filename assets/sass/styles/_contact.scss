@@ -1,0 +1,58 @@
+.contact{
+	background-color: $base-color-white;
+	height: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: opacity .25s ease-in-out;
+	-o-transition: opacity .25s ease-in-out;
+	-ms-transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+	h2{
+		font-size: 36px;
+		margin-bottom: 30px;
+	}
+	&__form{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		div{
+			width: 100%;
+			margin-bottom: 25px;
+			&:nth-of-type(1), &:nth-of-type(2) {
+				width: 50%;
+			}
+			&:nth-of-type(1){
+				padding-right: 12.5px;
+			}
+			&:nth-of-type(2){
+				padding-left: 12.5px;
+			}
+			input[type="text"], textarea{
+				font-size: 19px;
+				font-family: 'Source Sans Pro', sans-serif;
+				background-color: $base-color-lighgray;
+				width: 100%;
+				border: none;
+				padding: 14px;
+				font-weight: 300;
+				color: $base-color-dark-text;
+			}
+			input[type="button"], input[type="submit"], input[type="reset"], button, .button {
+				font-weight: 300;
+				font-size: 19px;
+				display: inline-block;
+				background-color: $base-color-dark-text;
+				color: $base-color-white;
+				border: 0;
+				padding: 18px 28.5px;
+				cursor: pointer;
+				outline: 0;
+				transition: background-color .25s ease-in-out;
+				&:hover{
+					background-color: $base-color-darkgray;
+				}
+			}
+		}
+	}
+}

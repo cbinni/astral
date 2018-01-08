@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Astral</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="dist/app.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="tabs">
+				<label for="index" class="tabs__label"><i class="fa fa-home"></i></label>
+				<label for="work" class="tabs__label"><i class="fa fa-folder"></i></label>
+				<label for="contact" class="tabs__label"><i class="fa fa-envelope"></i></label>
+				<label for="toggler" class="tabs__label"><i class="fa fa-twitter"></i></label>
+			</div>
+			<input id="index" type="radio" name="tabs" checked />
+			<div class="index">
+				<div class="index__text">
+					<h1>Jane DoeSenior</h1>
+					<h3>Astral Projectionist</h3>
+				</div>
+				<div class="index__image">
+					<img src="assets/images/me.jpg" alt="Work">
+				</div>
+			</div>
+			<input id="work" type="radio" name="tabs"/>
+			<div class="work">
+				<h2>Work</h2>
+				<p>Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia luctus elit eget interdum.</p>
+				<div class="work__images">
+					<div class="work__image">
+						<img src="https://html5up.net/uploads/demos/astral/images/pic01.jpg" alt="Pic 01"/>
+					</div>
+					<div class="work__image">
+						<img src="https://html5up.net/uploads/demos/astral/images/pic02.jpg" alt="Pic 02"/>
+					</div>
+					<div class="work__image">
+						<img src="https://html5up.net/uploads/demos/astral/images/pic03.jpg" alt="Pic 03"/>
+					</div>
+					<div class="work__image">
+						<img src="https://html5up.net/uploads/demos/astral/images/pic04.jpg" alt="Pic 04"/>
+					</div>
+					<div class="work__image">
+						<img src="https://html5up.net/uploads/demos/astral/images/pic05.jpg" alt="Pic 05"/>
+					</div>
+					<div class="work__image">
+						<img src="https://html5up.net/uploads/demos/astral/images/pic06.jpg" alt="Pic 06"/>
+					</div>
+					<div class="work__image">
+						<img src="https://html5up.net/uploads/demos/astral/images/pic07.jpg" alt="Pic 07"/>
+					</div>
+					<div class="work__image">
+						<img src="https://html5up.net/uploads/demos/astral/images/pic08.jpg" alt="Pic 08"/>
+					</div>
+					<div class="work__image">
+						<img src="https://html5up.net/uploads/demos/astral/images/pic09.jpg" alt="Pic 09"/>
+					</div>
+					<div class="work__image">
+						<img src="https://html5up.net/uploads/demos/astral/images/pic10.jpg" alt="Pic 10"/>
+					</div>
+					<div class="work__image">
+						<img src="https://html5up.net/uploads/demos/astral/images/pic11.jpg" alt="Pic 11"/>
+					</div>
+					<div class="work__image">
+						<img src="https://html5up.net/uploads/demos/astral/images/pic12.jpg" alt="Pic 12"/>
+					</div>
+				</div>
+			</div>
+			<input id="contact" type="radio" name="tabs"/>
+			<div class="contact">
+				<h2>Contact Me</h2>
+				<form action="#" method="post" class="contact__form form">
+					<div>
+						<input type="text" name="name" placeholder="Name">
+					</div>
+					<div>
+						<input type="text" name="email" placeholder="Email">
+					</div>
+					<div>
+						<input type="text" name="subject" placeholder="Subject">
+					</div>
+					<div>
+						<textarea name="message" placeholder="Message" rows="8"></textarea>
+					</div>
+					<div>
+						<input type="submit" value="Send Message">
+					</div>
+				</form>
+			</div>
+			<input id="toggler" class="modal-toggler" type="checkbox" aria-hidden="true">
+			<label for="toggler" class="twitter">
+				<div class="twitter__modal modal">
+					<div class="modal__header">
+						<div class="modal__image">
+							<img src="assets/images/me.jpg" alt="Work">
+						</div>
+						<div class="modal__logo-twitter">
+							<i class="fa fa-twitter"></i>
+						</div>
+						<div class="modal__close">
+							<label for="toggler"><i class="fa fa-times"></i></label>
+						</div>
+					</div>
+
+					<div class="modal__body">
+						<div class="modal__image">
+							<i class="fa fa-camera"></i>
+							<i class="fa fa-camera"></i>
+							<i class="fa fa-camera"></i>
+						</div>
+						<div class="modal__logo-twitter">
+							<textarea name="" placeholder="What is happaning?"></textarea>
+						</div>
+						<div class="modal__close">
+							<p>GIF</p>
+							<i class="fa fa-map-marker"></i>
+							<i class="fa fa-check"></i>
+						</div>
+					</div>
+				</div>
+			</label>
+		</div>
+	</body>
+</html>
