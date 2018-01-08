@@ -2226,7 +2226,7 @@ html {
     html body .container {
       width: 900px;
       display: block;
-      margin: 23% auto; }
+      margin: 10% auto; }
       html body .container input[type="radio"], html body .container input[type="checkbox"] {
         display: none; }
 
