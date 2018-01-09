@@ -2441,12 +2441,13 @@ input:checked + .twitter {
     .contact__form div {
       width: 100%;
       margin-bottom: 25px; }
-      .contact__form div:nth-of-type(1), .contact__form div:nth-of-type(2) {
-        width: 50%; }
-      .contact__form div:nth-of-type(1) {
-        padding-right: 12.5px; }
-      .contact__form div:nth-of-type(2) {
-        padding-left: 12.5px; }
+      @media screen and (min-width: 1001px) {
+        .contact__form div:nth-of-type(1), .contact__form div:nth-of-type(2) {
+          width: 50%; }
+        .contact__form div:nth-of-type(1) {
+          padding-right: 12.5px; }
+        .contact__form div:nth-of-type(2) {
+          padding-left: 12.5px; } }
       .contact__form div input[type="text"], .contact__form div textarea {
         font-size: 19px;
         font-family: 'Source Sans Pro', sans-serif;
