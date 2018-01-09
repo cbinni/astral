@@ -8,6 +8,14 @@
 	-ms-transition: opacity .25s ease-in-out;
 	-moz-transition: opacity .25s ease-in-out;
 	-webkit-transition: opacity .25s ease-in-out;
+
+	@media screen and (max-width:1000px){
+		height: auto;
+		padding: 70px 50px;
+		opacity: 1;
+		margin-bottom: 50px;
+	}
+
 	h2{
 		font-size: 36px;
 		margin-bottom: 30px;
@@ -27,8 +35,15 @@
 			height: 195px;
 			overflow: hidden;
 			margin-bottom: 10px;
+			@media screen and (max-width:1000px){
+				width: 100%;
+				height: auto;
+			}
 			img{
 				max-width: 100%;
+				@media screen and (max-width:1000px){
+					width: 100%;
+				}
 			}
 		}
 	}

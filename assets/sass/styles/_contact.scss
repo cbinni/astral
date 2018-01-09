@@ -8,6 +8,13 @@
 	-ms-transition: opacity .25s ease-in-out;
 	-moz-transition: opacity .25s ease-in-out;
 	-webkit-transition: opacity .25s ease-in-out;
+
+	@media screen and (max-width:1000px){
+		height: auto;
+		padding: 70px 50px;
+		opacity: 1;
+	}
+	
 	h2{
 		font-size: 36px;
 		margin-bottom: 30px;
