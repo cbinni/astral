@@ -47,6 +47,19 @@
 		}
 	}
 }
+.tab__content{
+	background-color: $base-color-white;
+	height: 0;
+	opacity: 0;
+	min-height: 0;
+	width: 100%;
+	overflow: hidden;
+	transition: opacity .25s ease-in-out;
+	-o-transition: opacity .25s ease-in-out;
+	-ms-transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
 
 @media screen and (min-width: 1001px){
 	input:checked + .index {

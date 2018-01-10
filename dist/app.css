@@ -2290,6 +2290,19 @@ html {
       transform: translateX(-50%);
       z-index: 50; }
 
+.tab__content {
+  background-color: #FFFFFF;
+  height: 0;
+  opacity: 0;
+  min-height: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: opacity .25s ease-in-out;
+  -o-transition: opacity .25s ease-in-out;
+  -ms-transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out; }
+
 @media screen and (min-width: 1001px) {
   input:checked + .index {
     min-height: 400px;
@@ -2327,149 +2340,128 @@ input:checked + .twitter {
   -moz-transition: opacity .25s ease-in-out;
   -webkit-transition: opacity .25s ease-in-out; }
 
-.index {
-  height: 0;
-  opacity: 0;
-  min-height: 0;
+@media screen and (min-width: 1001px) {
+  .index {
+    overflow: hidden;
+    display: flex; } }
+
+@media screen and (max-width: 1000px) {
+  .index {
+    height: auto;
+    opacity: 1;
+    margin-bottom: 50px; } }
+
+.index__text {
   width: 100%;
-  transition: opacity .25s ease-in-out;
-  -o-transition: opacity .25s ease-in-out;
-  -ms-transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out; }
+  padding: 30px;
+  background-color: #FFFFFF; }
   @media screen and (min-width: 1001px) {
-    .index {
-      overflow: hidden;
-      display: flex; } }
-  @media screen and (max-width: 1000px) {
-    .index {
-      height: auto;
-      opacity: 1;
-      margin-bottom: 50px; } }
-  .index__text {
-    width: 100%;
-    padding: 30px;
-    background-color: #FFFFFF; }
-    @media screen and (min-width: 1001px) {
-      .index__text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 65%;
-        padding: 0 50px; } }
-    .index__text h1 {
-      font-size: 48px;
-      color: #363636;
-      font-weight: 400; }
-    .index__text h3 {
-      font-size: 30px;
-      color: #AAAAAA;
-      font-weight: 400; }
-  @media screen and (min-width: 1001px) {
-    .index__image {
-      width: 35%;
-      background-color: red;
-      overflow: hidden; } }
-  .index__image img {
-    width: 100%;
-    height: 100%; }
+    .index__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 65%;
+      padding: 0 50px; } }
+  .index__text h1 {
+    font-size: 48px;
+    color: #363636;
+    font-weight: 400; }
+  .index__text h3 {
+    font-size: 30px;
+    color: #AAAAAA;
+    font-weight: 400; }
 
-.work {
-  background-color: #FFFFFF;
-  height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition: opacity .25s ease-in-out;
-  -o-transition: opacity .25s ease-in-out;
-  -ms-transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out; }
-  @media screen and (max-width: 1000px) {
-    .work {
-      height: auto;
-      padding: 70px 50px;
-      opacity: 1;
-      margin-bottom: 50px; } }
-  .work h2 {
-    font-size: 36px;
-    margin-bottom: 30px; }
-  .work p {
-    font-size: 20px;
-    margin-bottom: 40px;
-    color: #AAAAAA; }
-  .work__images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-    .work__images div {
-      width: 260px;
-      height: 195px;
-      overflow: hidden;
-      margin-bottom: 10px; }
-      @media screen and (max-width: 1000px) {
-        .work__images div {
-          width: 100%;
-          height: auto; } }
-      .work__images div img {
-        max-width: 100%; }
-        @media screen and (max-width: 1000px) {
-          .work__images div img {
-            width: 100%; } }
+@media screen and (min-width: 1001px) {
+  .index__image {
+    width: 35%;
+    background-color: red;
+    overflow: hidden; } }
 
-.contact {
-  background-color: #FFFFFF;
-  height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition: opacity .25s ease-in-out;
-  -o-transition: opacity .25s ease-in-out;
-  -ms-transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out; }
-  @media screen and (max-width: 1000px) {
-    .contact {
-      height: auto;
-      padding: 70px 50px;
-      opacity: 1; } }
-  .contact h2 {
-    font-size: 36px;
-    margin-bottom: 30px; }
-  .contact__form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-    .contact__form div {
-      width: 100%;
-      margin-bottom: 25px; }
-      @media screen and (min-width: 1001px) {
-        .contact__form div:nth-of-type(1), .contact__form div:nth-of-type(2) {
-          width: 50%; }
-        .contact__form div:nth-of-type(1) {
-          padding-right: 12.5px; }
-        .contact__form div:nth-of-type(2) {
-          padding-left: 12.5px; } }
-      .contact__form div input[type="text"], .contact__form div textarea {
-        font-size: 19px;
-        font-family: 'Source Sans Pro', sans-serif;
-        background-color: #F5F5F5;
+.index__image img {
+  width: 100%;
+  height: 100%; }
+
+@media screen and (max-width: 1000px) {
+  .work {
+    height: auto;
+    padding: 70px 50px;
+    opacity: 1;
+    margin-bottom: 50px; } }
+
+.work h2 {
+  font-size: 36px;
+  margin-bottom: 30px; }
+
+.work p {
+  font-size: 20px;
+  margin-bottom: 40px;
+  color: #AAAAAA; }
+
+.work__images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .work__images div {
+    width: 260px;
+    height: 195px;
+    overflow: hidden;
+    margin-bottom: 10px; }
+    @media screen and (max-width: 1000px) {
+      .work__images div {
         width: 100%;
-        border: none;
-        padding: 14px;
-        font-weight: 300;
-        color: #363636; }
-      .contact__form div input[type="button"], .contact__form div input[type="submit"], .contact__form div input[type="reset"], .contact__form div button, .contact__form div .button {
-        font-weight: 300;
-        font-size: 19px;
-        display: inline-block;
-        background-color: #363636;
-        color: #FFFFFF;
-        border: 0;
-        padding: 18px 28.5px;
-        cursor: pointer;
-        outline: 0;
-        transition: background-color .25s ease-in-out; }
-        .contact__form div input[type="button"]:hover, .contact__form div input[type="submit"]:hover, .contact__form div input[type="reset"]:hover, .contact__form div button:hover, .contact__form div .button:hover {
-          background-color: #676767; }
+        height: auto; } }
+    .work__images div img {
+      max-width: 100%; }
+      @media screen and (max-width: 1000px) {
+        .work__images div img {
+          width: 100%; } }
+
+@media screen and (max-width: 1000px) {
+  .contact {
+    height: auto;
+    padding: 70px 50px;
+    opacity: 1; } }
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 30px; }
+
+.contact__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .contact__form div {
+    width: 100%;
+    margin-bottom: 25px; }
+    @media screen and (min-width: 1001px) {
+      .contact__form div:nth-of-type(1), .contact__form div:nth-of-type(2) {
+        width: 50%; }
+      .contact__form div:nth-of-type(1) {
+        padding-right: 12.5px; }
+      .contact__form div:nth-of-type(2) {
+        padding-left: 12.5px; } }
+    .contact__form div input[type="text"], .contact__form div textarea {
+      font-size: 19px;
+      font-family: 'Source Sans Pro', sans-serif;
+      background-color: #F5F5F5;
+      width: 100%;
+      border: none;
+      padding: 14px;
+      font-weight: 300;
+      color: #363636; }
+    .contact__form div input[type="button"], .contact__form div input[type="submit"], .contact__form div input[type="reset"], .contact__form div button, .contact__form div .button {
+      font-weight: 300;
+      font-size: 19px;
+      display: inline-block;
+      background-color: #363636;
+      color: #FFFFFF;
+      border: 0;
+      padding: 18px 28.5px;
+      cursor: pointer;
+      outline: 0;
+      transition: background-color .25s ease-in-out; }
+      .contact__form div input[type="button"]:hover, .contact__form div input[type="submit"]:hover, .contact__form div input[type="reset"]:hover, .contact__form div button:hover, .contact__form div .button:hover {
+        background-color: #676767; }
 
 .twitter {
   position: fixed;
